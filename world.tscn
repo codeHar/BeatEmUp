@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://dyqvaj2f26xl" path="res://world.gd" id="1_tlwt5"]
 [ext_resource type="PackedScene" uid="uid://cey8c15so5q4p" path="res://scenes/characters/player.tscn" id="2_fj7yv"]
 [ext_resource type="PackedScene" uid="uid://3c4ydd0sftfy" path="res://scenes/stage/barrel.tscn" id="4_aqk2v"]
+[ext_resource type="PackedScene" uid="uid://c40qannnixh08" path="res://scenes/characters/enemy.tscn" id="5_036b0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fj7yv"]
 size = Vector2(10, 80)
@@ -41,3 +42,15 @@ collision_layer = 1
 
 [node name="Barrel" parent="ActorsContainer" unique_id=859107498 instance=ExtResource("4_aqk2v")]
 position = Vector2(75, 56)
+
+[node name="Enemy" parent="ActorsContainer" unique_id=520397123 node_paths=PackedStringArray("player") instance=ExtResource("5_036b0")]
+position = Vector2(55, 57)
+player = NodePath("../Player")
+speed = 15.0
+knockBackIntensity = 30.0
+
+[node name="Enemy2" parent="ActorsContainer" unique_id=2129177747 node_paths=PackedStringArray("player") instance=ExtResource("5_036b0")]
+position = Vector2(11, 54)
+player = NodePath("../Player")
+speed = 15.0
+knockBackIntensity = 30.0

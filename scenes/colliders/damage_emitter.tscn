@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ceb8fsfv17shf"]
 
-[node name="DamangeEmitter" type="Area2D" unique_id=1267148340]
+[node name="DamageEmitter" type="Area2D" unique_id=1267148340]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1248214033]
 debug_color = Color(0.9567805, 0.34318745, 0.30177683, 0.41960785)
